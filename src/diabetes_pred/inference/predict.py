@@ -15,7 +15,7 @@ def predict(features: dict) -> float:
     model = load_model()
 
     df = pd.DataFrame([features])
-    df = df[FEATURE_NAMES]  # enforce order
+    df = df[FEATURE_NAMES] 
 
     proba = model.predict_proba(df)[0, 1]
     return float(proba)

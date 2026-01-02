@@ -13,6 +13,7 @@ left_col, right_col = st.columns([1, 2], gap="large")
 
 # ---------- Left Panel ----------
 with left_col:
+    st.title("🩺 Diabetes Risk Predictor")
     st.markdown(
         textwrap.dedent(
             """
